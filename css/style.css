@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    background: linear-gradient(to bottom, )
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.phone-screen {
+    margin-bottom: 1rem;
+    border: 8px solid #222;
+    border-radius: 11px;
+    background: linear-gradient(to bottom, #d6d6d6, #fff);
+}
+
+.phone-screen textarea {
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 95%;
+    height: 250px;
+    border: 2px solid #ccc;
+    border-radius: 11px;
+}
+
+.phone-keypad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.phone-keypad button {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    height: 65px;
+    flex: 0 0 33%;
+    border-radius: 11px;
+    font-weight: 700;
+    background: linear-gradient(to bottom, #363636, #232323);
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .phone {
+        width: 40%;
+        max-width: 900px;
+    }
+}
